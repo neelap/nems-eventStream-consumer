@@ -11,6 +11,6 @@ import org.springframework.cloud.stream.messaging.Sink;
 public class Consumer {
     @StreamListener(Sink.INPUT)
     public void loggerSink(Object payload) {
-        System.out.println("Payload read by First Consumer" + payload);
+        System.out.println(payload);
     }
 }
